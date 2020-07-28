@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style type="text/css">
+    ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: grey;
+}
+ul:after{
+    content:'';
+    display: block;
+    clear:both;
+}
+li {
+    float: left;
+}
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+li a:hover:not(.active) {
+  background-color: black;l
+  color: white;
+
+}
+.active {
+    background-color: #4CAF50;
+}
+    </style>
+</head>
+<body>
+    <ul>
+      <li><a href="fileup.html">파일업로드</a></li>
+      <li><a href="smdt.html">데이터요약</a></li>
+      <li><a href="aboutdt.html">데이터상세</a></li>
+      <li><a class="active" href="mdset.html">모델설정</a></li>
+      <li><a href="result.html">결과</a></li>
+    </ul>
+
+    <a href="logistic.html">로지스틱</a>
+    <a href="linear.html">선형회귀</a>
+    <a href="random.html">랜덤포레스트</a>
+    <a href="decision.html">의사결정트리</a>
+
+<h1>로지스틱 회귀분석(Logisticregression)</h1>
+ <p>로지스틱회귀분석은 분석하고자 하는 대상들이 두 집단 혹은 그 이상의 집단(다변수 데이터)으로 나누어진 경우에 개별 관측치들이 어느 집단으로 분류될 수 있는가를 분석하고
+   이를 예측하는 모형을 개발하는데사용되는 대표적인 통계 알고리즘 이다.
+ </p>
+ <p>
+로지스틱회귀분석은 분석 목적이나 절차에 있어서는 일반 회귀분석과 유사하나 종속 변수가 명목척도로 측정된 범주형 질적 변수인 경우에 사용한다는 점에서 일반회귀분석과 차이가 있다.
+</p>
+<p>
+ 로지스틱 회귀분석은 판별분석과는 달리 예측변수에 범주형 변수를 투입 할 수있는 장점이 있다.
+가장 일반적인 예로 로지스틱 회귀에서는 성별을 매우 자연스럽게 예측 변수로 포함할수 있다.
+</p>
+<p>
+종속변수가 셋 이상인 경우에는 다항 로지스틱 분석이 사용되며 두가지의 가능한 값만 가질 경우에는 이항 로지스틱 분석을 사용한다.
+성별의 경우는 가능한 값이 두 개이기 때문에 이항 로지스틱 변수를 사용 한다.
+</p>
+<p>
+[로지스틱 회귀분석 적용 예]
+</p>
+<p>
+l  연령에 따른 자동차 소유유무, 연간 소득 등과 같은 특성이 개인 신용 여부에 어떠한 영향을 미치는가?
+</p>
+<p>
+l  유권자의 출생 지역, 성별, 거주지역, 학력등이 선호하는 후보선택에 어떠한 영향을 미치는가?
+</p>
+<p>
+l  흡연 유무, 주량, 직업, 비만 정도등의 특성이 특정한 질병발생에 어떠한 영향을 미치는가?
+</p>
+<p>
+l  선택대상이 되는 상표들에대한 평가와 응답자의 특성이 선호상표 선택에 어떠한 영향을 미치는가?
+ </p>
+
+</body>
+</html>
